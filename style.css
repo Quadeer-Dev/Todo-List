@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:ital,wght@0,400;1,200&family=Orbitron&family=Teko:wght@400;600&display=swap");
+
+/* if you want to use font family
+     font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Teko', sans-serif; 
+    */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Happy Monkey", cursive;
+  background-color: rgb(238, 227, 234);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  overflow: hidden;
+  /* margin: 0; */
+}
+
+h1 {
+  margin-top: 10%;
+  color: rgb(33, 136, 102);
+  font-size: 100px;
+  opacity: 0.5;
+  user-select: none;
+  /* text-align: center; */
+}
+
+form {
+  box-shadow: 0px 5px 10px rgb(113, 103, 103);
+  width: 400px;
+  max-width: 100%;
+}
+
+.input {
+  border: none;
+  display: block;
+  color: rgb(43, 91, 167);
+  font-size: 30px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.input::placeholder {
+  color: rgb(200, 210, 210);
+}
+.input:focus {
+  outline-color: rgb(33, 136, 102);
+}
+.todos {
+  background-color: rgba(232, 224, 212, 0.223);
+  list-style-type: none;
+}
+.todos li {
+  border-top: 1px solid rgba(44, 43, 42, 0.223);
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: "Montserrat";
+  user-select: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(105, 148, 113);
+}
+
+small {
+  margin-top: 30px;
+  font-size: 16px;
+  color: rgb(24, 25, 17);
+}
